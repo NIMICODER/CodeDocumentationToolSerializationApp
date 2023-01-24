@@ -13,8 +13,6 @@ namespace ObjectWriter.UI
         {
             DocumentData.GetDocs();
             SerializerApp.SerializerRun();
-
-
         }
     }
 }

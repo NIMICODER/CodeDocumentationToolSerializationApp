@@ -12,7 +12,7 @@ namespace ObjectContent.Application
     public static  class DocumentData
     {
         public readonly static StringBuilder FileInfo = new StringBuilder();
-          static List<ObjectInfo> @ObjectInfo { get; set; } = new List<ObjectInfo>();
+          public static List<ObjectInfo> @ObjectInfo { get; set; } = new List<ObjectInfo>();
 
         //public static List<ObjectInfo> objectInfo { get; set; } = new List<ObjectInfo>();
         [Description("This method return the all the description and information in the assemblies illustrated by the default attribute.")]

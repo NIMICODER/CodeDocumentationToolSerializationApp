@@ -23,14 +23,14 @@ namespace ObjectWriter.UI.Serializer.UI
 
 
             ////Creating a Json File.
-            //string JsonFileName = "MetaDataInfo.json";
-            //WriteObjectToJson.SerializeToJsonFormat(DocumentData.@ObjectInfo, JsonFileName);
-            //Console.WriteLine($"=> Object serialized Json Format. File name: {JsonFileName}");
+            string JsonFileName = "MetaDataInfo.json";
+            WriteObjectToJson.SerializeToJsonFormat(DocumentData.@ObjectInfo, JsonFileName);
+            Console.WriteLine($"=> Object serialized Json Format. File name: {JsonFileName}");
 
             ////Creating an XML File. 
-            //string XMLFileName = "MetaDataInfo.xml";
-            //WriteObjectToXML.SerializeToXmlFormat(MetaData.@ObjectInfo, XMLFileName);
-            //Console.WriteLine($"=> Object serialized Xml Format. File name: {XMLFileName}");
+            string XMLFileName = "MetaDataInfo.xml";
+            WriteObjectToXML.SerializeToXmlFormat(DocumentData.@ObjectInfo, XMLFileName);
+            Console.WriteLine($"=> Object serialized Xml Format. File name: {XMLFileName}");
 
             //Creating a PDF File.
             string PDFfileName = "MetaDataInfo.pdf";

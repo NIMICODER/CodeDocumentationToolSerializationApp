@@ -5,7 +5,7 @@ using System.Text;
 namespace ObjectContent.Model
 {
     //[Description("This is the ObjectInfo property")]
-    internal class ObjectInfo
+    public class ObjectInfo
     {
         public string Name { get; set; }
         public string Description { get; set; }
