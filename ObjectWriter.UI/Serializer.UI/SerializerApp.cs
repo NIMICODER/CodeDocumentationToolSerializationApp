@@ -14,6 +14,7 @@ namespace ObjectWriter.UI.Serializer.UI
     {
         public static void SerializerRun()
         {
+            //Serialize to Text format
             StringBuilder TextData = DocumentData.FileInfo;
             string Text = Convert.ToString(TextData) ?? "Text Input was empty.";
             string FileName = "DocumentDataInfo.txt";
@@ -22,17 +23,12 @@ namespace ObjectWriter.UI.Serializer.UI
 
 
 
-            ////Creating a Json File.
+            //Serialize to Text Json File format.
             string JsonFileName = "MetaDataInfo.json";
             WriteObjectToJson.SerializeToJsonFormat(DocumentData.@ObjectInfo, JsonFileName);
             Console.WriteLine($"=> Object serialized Json Format. File name: {JsonFileName}");
 
-            ////Creating an XML File. 
-            string XMLFileName = "MetaDataInfo.xml";
-            WriteObjectToXML.SerializeToXmlFormat(DocumentData.@ObjectInfo, XMLFileName);
-            Console.WriteLine($"=> Object serialized Xml Format. File name: {XMLFileName}");
-
-            //Creating a PDF File.
+            //Serialize to PDF File format.
             string PDFfileName = "MetaDataInfo.pdf";
             WriteObjectToPDF.SerializeToPdfFormat(Text, PDFfileName);
             Console.WriteLine($"Object serialized PDF Format. File name: {PDFfileName}");

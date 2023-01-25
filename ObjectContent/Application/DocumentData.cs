@@ -26,7 +26,7 @@ namespace ObjectContent.Application
             Type[] types = assembly.GetTypes();
             foreach (Type type in types)
             {
-                PrintTypes(type);
+                //PrintTypes(type);
                 PrintType(type);
                 PrintMethods(type);
                 PrintProperties(type);
